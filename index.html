@@ -7,7 +7,21 @@
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type ="module" src="config/apikey.js"></script>
     <script type ="module" src="src/main.js"></script>
+    <style>
+        .giphy_wrap { padding: 50px 20px; max-width: 800px; margin: 0 auto; }
+        .giphy_wrap .giphy_search { display: flex; width: 100%; height: 40px; margin-bottom: 20px; }
+        .giphy_wrap .giphy_search .search_bx { width: 100%; border-radius: 0; border: 1px solid; outline: none; padding: 0 10px; font-size: 16px; }
+        .giphy_wrap .giphy_search button { width: 80px; margin-left: 10px; border-radius: 0; border: none; background-color: black; color: #fff; font-size: 16px; cursor: pointer; }
+        .giphy_wrap #giphy_list img { width: calc(100% / 3 - 10px); }
+    </style>
 </head>
 <body>
+    <div class="giphy_wrap">
+        <div class="giphy_search">
+            <input class="search_bx" type="text" name="" id="">
+            <button>Search!</button>
+        </div>
+        <div id="giphy_list"></div>
+    </div>
 </body>
 </html>
